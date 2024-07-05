@@ -1,0 +1,882 @@
+
+
+/*HEADER*/
+*{font-style: italic;
+    margin: 0;
+    padding: 0;
+}
+
+
+.iconito {
+    display: none;
+    
+}
+
+.encabezado{
+    background-color: black;
+    margin-bottom: -3%;
+    position: relative;
+    position: sticky;
+    z-index: 1;
+    top:0;
+}
+
+.encabezado nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1%;
+
+}
+
+.encabezado nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.encabezado nav a {
+    text-decoration: none;
+    color: white;
+    padding: 12px 20px;
+    display: block;
+    font-size: 20px;
+}
+
+.encabezado nav ul li ul{
+    display: flex;
+    flex-direction: column;
+    position:absolute;
+    display: none;
+}
+
+.encabezado a{
+    background-color: black;
+}
+
+.encabezado a:hover{
+    background-color:rgb(114, 0, 0);
+    color: black;
+}
+
+.encabezado nav ul li:hover> ul{
+    display: block;
+
+}
+
+.encabezado nav img{
+    width: 65px;
+    padding-bottom: -15%;
+}
+    
+ /*   .icon:hover{
+        display: none;
+        }
+*/
+
+.cuerpo_pagina{
+    background-image: url(IMAGENES/DETALLES/FONDOPERSONAJES.jpg);
+}
+
+
+.datos_serie{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    justify-content: center;
+}
+
+
+/*INDEX*/
+
+
+
+section div img{
+
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+}
+
+
+
+#IPRINCIPAL {
+    
+    align-items: center;
+    width: 100%;
+    margin:0 0 0 0;
+}
+
+
+.TS{
+    display: inline-block;
+    margin-left: 10%;
+    justify-content: center;
+   padding: 5% 5% 5% 5%;
+    height: 20%;
+    width: 70%;
+    background-color: #960000e6;
+    color: white;
+    font-size: 130%;
+    box-shadow: 0 5px 10px #300707;
+    margin-top: 10%;
+   margin-bottom: 5%;
+}
+
+
+#titulo_principal{
+    font-size: 220%;
+}
+
+#introduccion{
+    font-size: 130%;
+    text-align: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.GALERIA div{
+
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    padding-left: 10%;
+    }
+
+.GALERIA img{
+    padding-left: 10%;
+    display: inline-block;
+    width: 100%;
+    margin-left: 10%;
+    margin-bottom: 5%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*PERSONAJES PRINCIPALES*/
+
+
+#tarjetillas .TARJETA{
+display: inline-block;
+width: 29%;
+margin-left: 2.3%;
+}
+
+.TARJETA{
+    position:relative;
+    width: 300px;
+    height: 350px;
+    margin: 20px;
+}
+
+.TARJETA .CARA {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.TARJETA .FRENTE {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+}
+
+.TARJETA .FRENTE img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.TARJETA .FRENTE h3 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #ffffff;
+    background: rgba(0,0,0,.4);
+    text-align: center;
+}
+
+.TARJETA .TRASERA {
+    transform: perspective(600px) rotateY(180deg);
+    background: rgb(108, 3, 3);
+    padding: 15px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #000;
+}
+
+.TARJETA .TRASERA h3 {
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+.TARJETA .TRASERA p {
+    letter-spacing: 1px;
+} 
+
+.TARJETA:hover .FRENTE {
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.TARJETA:hover .TRASERA {
+    transform: perspective(600px) rotateY(360deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*LA SERIE*/
+
+
+
+.argumento{
+    margin-top: 5%;
+ display: flex;   
+ flex-direction: column;
+ justify-content: center;
+ transition: 1s;
+ background-color: rgba(20, 19, 19, 0.575);
+ padding: 40px;
+ margin-bottom: 5%;
+}
+
+.argumento:hover{
+    background-color: rgba(148, 0, 0, 0.922);
+    transition: 1s;
+    
+}
+
+
+p{color: white;
+    display: flex;
+    text-align: left;
+    font-size: 17px;
+}
+
+
+.datos_elenco{
+    padding: 40px;
+    height: 40%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    transition: 1s;
+    background-color: rgba(20, 19, 19, 0.575);
+}
+
+.datos_elenco:hover{
+    height: 40%;
+    width: 30%;
+    background-color: rgba(148, 0, 0, 0.922);
+    transition: 1s;
+    
+}
+
+.listaelenco{
+    list-style: none;
+    color: white;
+    text-align: center;
+   
+}
+
+.listaproduccion{
+   
+    list-style: none;
+    color: white;
+    text-align: center;
+
+}
+
+#titulo_elenco{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 200%;
+
+}
+
+
+
+.datos_tecnicos{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 40px;
+    height: 40%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    transition: 1s;
+    background-color: rgba(20, 19, 19, 0.575);
+}
+
+.datos_tecnicos:hover{
+    height: 40%;
+    width: 30%;
+    background-color: rgba(148, 0, 0, 0.922);
+    transition: 1s;
+    
+}
+
+#produccion{
+    color: white;
+    font-size: 110%;
+}
+
+#titulo_produccion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 200%;
+
+}
+
+#titulo{color: rgb(255, 255, 255);
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+font-size: 480%;
+}
+
+
+
+/*CAPITULOS*/
+
+
+
+.CAP{
+        display: inline-block;
+        margin-left: 10%;
+        justify-content: center;
+        padding: 5% 5% 5% 5%;
+        height: 20%;
+        width: 70%;
+        background-color: #110f0f93;
+        font-size: 130%;
+        box-shadow: 0 5px 10px #650707;
+        margin-top: 4%;
+        margin-bottom: 4%;
+}
+
+.CAP p{
+    font-size: 1.3rem;
+    text-align: left;
+    padding: 1px;
+    color: white;
+}
+
+.CAP h1{
+    font-size: 2rem;
+}
+
+
+ hr {
+            height: 1px;
+            background-color: rgb(255, 255, 255);
+         }
+
+
+.CAP{
+        display: inline-block;
+        margin-left: 10%;
+        justify-content: center;
+       padding: 5% 5% 5% 5%;
+        height: 20%;
+        width: 70%;
+        background-color: #150f0f;
+        color: white;
+        font-size: 130%;
+       
+        box-shadow: 0 5px 10px #650707;
+       
+}
+ hr {
+            height: 1px;
+            background-color: rgb(255, 255, 255);
+    }
+
+
+
+
+
+
+          /*CRITICAS*/
+
+.CRI{
+    display: inline-block;
+    margin-left: 10%;
+    justify-content: center;
+   padding: 5% 5% 5% 5%;
+    height: 20%;
+    width: 70%;
+    background-color: #960000e6;
+    color: white;
+    font-size: 130%;
+    box-shadow: 0 5px 10px #300707;
+    margin-top: 4%;
+    margin-bottom: 4%;
+   
+}
+.CRI p{
+font-size: 1.3rem;
+text-align: left;
+padding: 2px;
+margin-top: 1%;
+}
+
+.CRI .fuentes{
+    text-align: center;
+    font-size: 200%;
+}
+
+a{
+    color: #ffffff;
+  text-decoration: none;
+}
+
+hr {
+        height: 1px;
+        background-color: rgb(255, 255, 255);
+    }
+
+.CRI img{
+    margin-top: 4%;
+    width:30%;
+    height:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    /*GALERIA*/
+
+.GALERIA{
+    margin-right: auto;
+    margin-left: -8%;
+    width: 90%;
+}
+.GALERIA img{
+    display: inline-block;
+    width: 21%;
+    margin-left: 2%;
+    margin-bottom: 5%;
+}
+
+
+
+
+
+
+
+
+.FORM{
+    justify-content: center;
+	width:90%;
+	height:auto;
+	background:#b50000;
+	border-radius:8px;
+	box-shadow:0 0 40px -10px #000;
+	margin:calc(1vh) auto;
+	padding:10px 30px;
+	box-sizing:border-box;
+	font-family:'Montserrat',sans-serif;
+	font-size: 14px;
+	margin-top: 6%;
+
+   
+}
+
+h3.CONTACTO{
+	margin:10px 0;
+	padding-bottom:10px;
+	width:150px;
+	color:#000000;
+	border-bottom:3px solid #000000;
+	font-size: large;
+}
+
+input{
+	width:100%;
+	margin-top: 30px;
+	padding:10px;
+	box-sizing:border-box;
+	background:none;
+	outline:none;
+	resize:none;
+	border:0;
+	transition:all .3s;
+	border-bottom:2px solid #000000;
+
+}
+
+input:focus{
+	border-bottom:2px solid #000000
+}
+
+input::placeholder{
+    color: #000;
+}
+
+button{
+	padding:8px 12px;
+	margin:50px 0 0;
+	border:2px solid #000000;
+	background:0;color:#000000;
+	cursor:pointer;
+	transition:all .3s;
+
+}
+
+
+button:hover{
+	background:#000000;
+	color:#fff;
+}
+
+div.NUM{
+
+    position:relative;
+    bottom:-40px;
+    background:#ba0f0f;
+	color:#000000;
+    width: 100%;
+    padding:16px 4px 16px 0;
+    border-radius:6px;
+    box-shadow:10px 10px 40px -14px #000;
+    left: 10%;
+
+}
+
+
+div.NUM span{
+		margin:0 5px 0 30px;
+}
+
+.CLASECONT{
+    display: flex;
+}
+
+.CLASECONT div{
+    width: 80%;
+    margin-bottom: 10%;
+}
+
+.CLASECONT img{
+    margin-top: 20%;
+    width: 92%;
+    height:auto;
+    box-shadow:10px 10px 40px -14px #000;
+    border-radius: 20px;
+}
+
+
+
+
+
+
+
+
+footer{
+
+    text-align: center;
+    height: 150px; 
+    background-color: rgb(0, 0, 0);
+    padding-top: 50px;
+
+}
+
+
+
+
+footer div a img{
+
+    width: 60%;
+    transition: 1s;
+    
+}
+
+footer div a img:hover{
+width: 100%;    
+transition: 1s;
+}
+
+
+
+footer div{
+    display: inline-block;
+    width: 50px;
+    margin: 0;
+}
+
+
+footer p{
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        height: 3rem;
+        background-color: #000000;
+        color: #fff;
+}
+
+
+
+
+
+
+
+
+
+      /*MEDIA QUERY*/
+
+
+       @media (max-width: 480px){
+
+        /*HEADER*/
+        
+        .encabezado nav ul {
+            display: none;
+            flex-direction: column;
+            width: 100%;
+        }
+    
+        .encabezado nav ul li {
+            width: 100%;
+            text-align: center;
+        }
+    
+        .encabezado nav ul.responsive {
+            display: flex;
+        }
+    
+        .iconito {
+            display: block;
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+    
+    
+        }
+/*INDEX*/
+
+section div img{
+    max-width: 480px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#imagenita img{
+    max-height: 280px;
+}
+
+#imagenita{
+    width: 150%;
+    margin-left: 20%;
+}
+
+.TRAILER {
+    
+    padding: 20% 20% 20% 20%;
+    margin-top: 1%;
+    display: block;
+    text-align: center;
+    margin-left: -31%;
+}
+
+
+.GALERIA div{
+
+    margin-right: auto;
+    margin-left: 1%;
+    width: 50%;
+    }
+
+.GALERIA img{
+    padding: 12%;
+    display: inline-block;
+    width: 100%;
+    margin-left: 50%;
+    margin-bottom: 5%;
+}
+
+
+
+#tarjetillas .TARJETA{
+
+    display:inline-block;
+    width: 50%;
+    margin-left: 24%;
+    margin-top: 10%;
+    }
+
+    .TARJETA{
+        position:relative;
+        width: 100%;
+        height: 350px;
+        margin: 20px;
+    }
+
+
+
+
+
+/*CONTACTO*/
+
+div.NUM{
+
+    position: relative;
+    bottom: -15px;
+    right: 5%;
+    background:#ba0f0f;
+	color:#000000;
+    width: 90%; 
+    padding: 16px 4px 16px 0;
+    border-radius: 6px;
+    box-shadow: 10px 10px 40px -14px #000;
+    margin-left: -5%;
+
+}
+
+div.NUM span{
+    margin: 0 5px 0 15px;
+}
+
+.CLASECONT{
+    display: block;
+}
+
+.CLASECONT div{
+    width: 100%;
+    margin-left: 0%;
+
+}
+
+.CLASECONT img{
+    margin-top: 12%;
+    margin-left: -2%;
+}
+
+
+/*LA SERIE*/
+.argumento{
+    
+    justify-content: center;
+    background-color: rgba(148, 0, 0, 0.922);
+    
+    }
+
+ p{
+        padding: 10px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 110%;
+ }
+    
+ 
+    .datos_elenco{
+        height: 50%;
+        width: 65%;
+        background-color: rgba(148, 0, 0, 0.922);
+    }
+
+    #listaelenco{
+        color: white;
+        font-size: 110%;
+        text-align: left;
+        align-items: center;
+    }
+    
+    #titulo_elenco{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 200%;
+    
+    }
+   
+ .datos_tecnicos{
+    height: 50%;
+    width: 65%;
+    background-color: rgba(148, 0, 0, 0.922);
+    }
+
+
+    #titulo_produccion{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 200%;
+    }
+    
+
+    #titulo{color: rgb(255, 255, 255);
+        font-family: 'Times New Roman', Times, serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    font-size: 480%;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

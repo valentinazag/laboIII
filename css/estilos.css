@@ -1,0 +1,596 @@
+
+
+/*HEADER*/
+*{font-style: italic;
+    margin: 0;
+    padding: 0;
+}
+.encabezado{
+    background-color: #000;
+    position: sticky;
+    top:0;
+}
+
+.icon img{
+width: 70px;
+height: 70px;
+}
+
+.encabezado nav{
+display: flex;
+justify-content: space-around;
+padding: 15px;
+}
+
+.encabezado nav ul{
+list-style: none;
+display: flex;
+justify-content:space-between ;
+}
+
+.encabezado a{
+text-decoration: none;
+font: size 20px;
+color: white;
+padding: 12px 40px;
+display: block;
+}
+
+
+.encabezado a:hover{
+background: rgb(143, 20, 20);
+
+}
+
+
+.encabezado nav ul li ul{
+    display: flex;
+    flex-direction:column;
+
+}
+
+
+.encabezado nav ul li ul{
+position: absolute;
+background: #000;
+}
+
+.encabezado nav ul li ul li{
+    width: 180px;
+}
+
+.encabezado nav ul li ul{
+    display:none;
+}
+
+
+.encabezado nav ul li:hover > ul{
+    display: block;
+}
+
+
+#cuerpo_episodios_principales{
+
+    background-image: url(IMAGENES/DETALLES/FONDOPERSONAJES.jpg);
+}
+
+/*INDEX*/
+
+#cuerpo_index{
+    background-image: url(IMAGENES/DETALLES/FONDOPERSONAJES.jpg);
+    background-repeat:repeat;
+    background-size: cover;
+    font-style: italic;
+   margin: 0;
+}
+
+
+#vidio{
+margin-left: 10%;
+
+}
+
+
+
+.TRAILER div{
+    width:42%;
+    display: inline-block;
+   
+  
+}
+
+footer{
+   /* display: flex;
+    justify-content: center;
+    align-items: center;*/
+    text-align: center;
+    height: 150px; 
+   /* width: 1000;*/
+    background-color: rgb(0, 0, 0);
+    padding-top: 50px;
+}
+
+
+
+
+footer div a img{
+
+    width: 60%;
+    transition: 1s;
+    
+}
+
+footer div a img:hover{
+width: 100%;    
+transition: 1s;
+}
+
+
+
+footer div{
+    display: inline-block;
+    width: 50px;
+    margin: 0;
+}
+
+
+
+/*miralo en netflix
+*/
+
+.TRAILER #miralo{
+width: 23%;
+    box-shadow:0 10px 15px #650707af;
+   
+}
+
+
+.GALERIA div{
+
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    padding-left: 10%;
+    }
+
+.GALERIA img{
+    padding-left: 10%;
+    display: inline-block;
+    width: 100%;
+    margin-left: 10%;
+    margin-bottom: 5%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*PERSONAJES PRINCIPALES*/
+#cuerpo_personajes_principales{
+    background-image: url(IMAGENES/DETALLES/FONDOPERSONAJES.jpg);
+    background-color: rgb(39, 39, 39);
+      font-style: italic;
+     margin: 0;
+  }
+  
+
+#tarjetillas .TARJETA{
+
+display: inline-block;
+width: 30%;
+
+}
+
+
+
+.TARJETA{
+    position:relative;
+    width: 300px;
+    height: 350px;
+    margin: 20px;
+}
+
+.TARJETA .CARA {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.TARJETA .FRENTE {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+}
+
+.TARJETA .FRENTE img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.TARJETA .FRENTE h3 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #ffffff;
+    background: rgba(0,0,0,.4);
+    text-align: center;
+}
+
+.TARJETA .TRASERA {
+    transform: perspective(600px) rotateY(180deg);
+    background: rgb(108, 3, 3);
+    padding: 15px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #000;
+}
+
+
+
+.TARJETA .TRASERA h3 {
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+.TARJETA .TRASERA p {
+    letter-spacing: 1px;
+} 
+
+.TARJETA:hover .FRENTE {
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.TARJETA:hover .TRASERA {
+    transform: perspective(600px) rotateY(360deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*LA SERIE*/
+
+#cuerpo_serie{
+    background-color: #000;
+    background-image: url(IMAGENES/DETALLES/FONDOPERSONAJES.jpg);
+}
+
+.argumento{
+    
+transition: 1s;
+background-color: rgba(0, 0, 0, 0.404);
+
+}
+
+.argumento:hover{
+    background-color: rgba(148, 0, 0, 0.922);
+    transition: 1s;
+    
+}
+
+
+p{color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 110%;
+}
+
+
+.datos_elenco{
+    height: 50%;
+    width: 50%;
+    margin-left: 300px;
+    transition: 1s;
+    background-color: rgba(0, 0, 0, 0.404);
+}
+
+.datos_elenco:hover{
+    height: 50%;
+    width: 50%;
+    background-color: rgba(148, 0, 0, 0.922);
+    transition: 1s;
+    margin-left: 300px;
+}
+
+#nombres{
+    color: white;
+    font-size: 110%;
+}
+
+#titulo_elenco{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 200%;
+
+}
+
+
+
+.datos_tecnicos{
+    height: 50%;
+    width: 50%;
+    transition: 1s;
+    background-color: rgba(0, 0, 0, 0.404);
+    margin-left: 300px;
+}
+
+.datos_tecnicos:hover{
+    height: 50%;
+    width: 50%;
+    background-color: rgba(148, 0, 0, 0.922);
+    transition: 1s;
+    margin-left: 300px;
+}
+
+#produccion{
+    color: white;
+    font-size: 110%;
+}
+
+#titulo_produccion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 200%;
+
+}
+
+
+
+#titulo{color: rgb(255, 255, 255);
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+font-size: 480%;
+}
+
+
+
+
+
+
+
+
+.CAP{
+        display: inline-block;
+        margin-left: 10%;
+        justify-content: center;
+       padding: 5% 5% 5% 5%;
+        height: 20%;
+        width: 70%;
+        background-color: #150f0f;
+        color: white;
+        font-size: 130%;
+       /* transition:0.5s;*/
+        box-shadow: 0 5px 10px #650707;
+       
+}
+ hr {
+            height: 1px;
+            background-color: rgb(255, 255, 255);
+          }
+
+/*.CAP:hover p{
+    transition: 0.3;
+    color: #00000000;
+}
+
+
+.CAP:hover{
+    box-shadow: 0 5px 10px #00000000;
+    display: inline-block;
+    margin-left: 10%;
+    justify-content: center;
+   padding: 5% 5% 5% 5%;
+    height: 20%;
+    width: 70%;
+    background-color: #00000000;
+    color: white;
+    font-size: 130%;
+    transition:0.5s;
+}
+*/
+#cuerpo_episodios_especiales{
+    background-color: #000;
+    background-image: url(IMAGENES/DETALLES/FONDOPERSONAJES.jpg);
+}
+
+
+.CAP{
+        display: inline-block;
+        margin-left: 10%;
+        justify-content: center;
+       padding: 5% 5% 5% 5%;
+        height: 20%;
+        width: 70%;
+        background-color: #150f0f;
+        color: white;
+        font-size: 130%;
+       
+        box-shadow: 0 5px 10px #650707;
+       
+}
+ hr {
+            height: 1px;
+            background-color: rgb(255, 255, 255);
+          }
+
+
+
+
+
+          /*CRITICAS*/
+
+.CRI{
+    display: inline-block;
+    margin-left: 10%;
+    justify-content: center;
+   padding: 5% 5% 5% 5%;
+    height: 20%;
+    width: 70%;
+    background-color: #960000e6;
+    color: white;
+    font-size: 130%;
+    box-shadow: 0 5px 10px #300707;
+   
+}
+a{color: #ffffff;
+  text-decoration: none;
+}
+hr {
+        height: 1px;
+        background-color: rgb(255, 255, 255);
+    }
+
+    #imagenita {
+        width: 100%; /* Asegura que la imagen se ajuste al ancho del contenedor */
+        height: auto; /* Mantiene la proporción de aspecto */
+    }
+
+
+    /*GALERIA*/
+
+
+
+
+
+
+
+
+
+
+
+      /*MEDIA QUERY*/
+
+
+       @media (max-width: 480px){
+
+        /*HEADER*/
+        .encabezado nav ul {
+            display: none;
+            flex-direction: column;
+            width: 100%;
+        }
+    
+        .encabezado nav ul li {
+            width: 100%;
+            text-align: center;
+        }
+    
+        .encabezado nav ul.responsive {
+            display: flex;
+        }
+    
+        .iconito {
+            display: block;
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+            
+        }
+
+/*INDEX*/
+
+/*width="420" height="290"*/
+
+section div img{
+    max-width: 480px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#imagenita img{
+    max-height: 280px;
+}
+
+#imagenita{
+    width: 150%;
+    margin-left: 20%;
+}
+
+.TRAILER {
+    margin-top: 1%;
+    display: block;
+    text-align: center;
+}
+.TRAILER iframe{
+    margin-top: 6%;
+    width: 100%;
+    text-align: center;
+}
+
+
+.GALERIA div{
+
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    }
+
+.GALERIA img{
+    display: inline-block;
+    width: 100%;
+    margin-left: 50%;
+    margin-bottom: 5%;
+}
+
+
+
+
+
+
+
+}
+
+
+
+    
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
