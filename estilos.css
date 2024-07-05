@@ -68,11 +68,7 @@
     width: 65px;
     padding-bottom: -15%;
 }
-    
- /*   .icon:hover{
-        display: none;
-        }
-*/
+
 
 .cuerpo_pagina{
     background-image: url(IMAGENES/DETALLES/FONDOPERSONAJES.jpg);
@@ -134,18 +130,8 @@ section div img{
 #introduccion{
     font-size: 130%;
     text-align: left;
+    margin-top: 2%;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 .GALERIA div{
@@ -183,7 +169,7 @@ section div img{
 
 #tarjetillas .TARJETA{
 display: inline-block;
-width: 29%;
+width: 28.2%;
 margin-left: 2.3%;
 }
 
@@ -382,7 +368,7 @@ p{color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-font-size: 480%;
+    font-size: 480%;
 }
 
 
@@ -392,17 +378,17 @@ font-size: 480%;
 
 
 .CAP{
-        display: inline-block;
-        margin-left: 10%;
-        justify-content: center;
-        padding: 5% 5% 5% 5%;
-        height: 20%;
-        width: 70%;
-        background-color: #110f0f93;
-        font-size: 130%;
-        box-shadow: 0 5px 10px #650707;
-        margin-top: 4%;
-        margin-bottom: 4%;
+    display: inline-block;
+    margin-left: 10%;
+    justify-content: center;
+    padding: 5% 5% 5% 5%;
+    height: 20%;
+    width: 70%;
+    background-color: #110f0f93;
+    font-size: 130%;
+    box-shadow: 0 5px 10px #650707;
+    margin-top: 4%;
+     margin-bottom: 4%;
 }
 
 .CAP p{
@@ -410,17 +396,18 @@ font-size: 480%;
     text-align: left;
     padding: 1px;
     color: white;
+    margin-top: 1%;
 }
 
 .CAP h1{
     font-size: 2rem;
+    
 }
 
-
  hr {
-            height: 1px;
-            background-color: rgb(255, 255, 255);
-         }
+    height: 1px;
+    background-color: rgb(255, 255, 255);
+     }
 
 
 .CAP{
@@ -581,22 +568,20 @@ button:hover{
 }
 
 div.NUM{
-
     position:relative;
     bottom:-40px;
     background:#ba0f0f;
 	color:#000000;
     width: 100%;
-    padding:16px 4px 16px 0;
+    padding: 16px 1px 16px 0;
     border-radius:6px;
     box-shadow:10px 10px 40px -14px #000;
     left: 10%;
-
 }
 
 
 div.NUM span{
-		margin:0 5px 0 30px;
+    margin: 0 1px 0 5px;
 }
 
 .CLASECONT{
@@ -676,32 +661,31 @@ footer p{
       /*MEDIA QUERY*/
 
 
-       @media (max-width: 480px){
+ @media (max-width: 480px){
 
         /*HEADER*/
         
-        .encabezado nav ul {
-            display: none;
-            flex-direction: column;
-            width: 100%;
-        }
+ .encabezado nav ul {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+}
     
-        .encabezado nav ul li {
-            width: 100%;
-            text-align: center;
-        }
+.encabezado nav ul li {
+ width: 100%;
+ text-align: center;
+}
+
     
-        .encabezado nav ul.responsive {
-            display: flex;
-        }
+.encabezado nav ul.responsive {
+ display: flex;
+ }
     
-        .iconito {
-            display: block;
-            color: white;
-            font-size: 24px;
-            cursor: pointer;
-    
-    
+.iconito {
+  display: block;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
         }
 /*INDEX*/
 
@@ -770,22 +754,11 @@ section div img{
 /*CONTACTO*/
 
 div.NUM{
-
-    position: relative;
-    bottom: -15px;
-    right: 5%;
-    background:#ba0f0f;
-	color:#000000;
-    width: 90%; 
-    padding: 16px 4px 16px 0;
-    border-radius: 6px;
-    box-shadow: 10px 10px 40px -14px #000;
-    margin-left: -5%;
-
+        margin-left: -10%;
 }
 
 div.NUM span{
-    margin: 0 5px 0 15px;
+    margin: 0 1px 0 15px;
 }
 
 .CLASECONT{
@@ -794,13 +767,11 @@ div.NUM span{
 
 .CLASECONT div{
     width: 100%;
-    margin-left: 0%;
-
 }
 
 .CLASECONT img{
     margin-top: 12%;
-    margin-left: -2%;
+    margin-left: 3.5%;
 }
 
 
